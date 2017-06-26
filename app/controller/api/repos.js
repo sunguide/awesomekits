@@ -3,8 +3,8 @@
 module.exports = app => {
     class ApiReposController extends app.Controller {
         * list() {
-            // this.ctx.body = "fuck ";
-            const list = yield ctx.model.Repos.find({});  // you should use upper case to access mongoose model
+            this.ctx.set("Access-Control-Allow-Origin","*");
+	    const list = yield this.ctx.model.Repos.find({});  // you should use upper case to access mongoose model
             this.ctx.body = {
                 list:list
             };

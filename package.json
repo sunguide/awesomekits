@@ -11,6 +11,8 @@
     "egg-bin": "^3.4.0",
     "egg-ci": "^1.7.0",
     "egg-mock": "^3.7.0",
+    "egg-mongoose": "^2.1.0",
+    "egg-view-nunjucks": "^2.1.2",
     "eslint": "^4.0.0",
     "eslint-config-egg": "^4.2.0",
     "supertest": "^3.0.0",
@@ -38,7 +40,8 @@
     "url": ""
   },
   "keywords": [
-    "demo", "demostash"
+    "demo",
+    "demostash"
   ],
   "author": "sunguide",
   "license": "MIT"
