@@ -1,0 +1,17 @@
+body,
+html {
+    font-family: Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+a {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none
+}
