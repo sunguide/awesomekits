@@ -7,6 +7,12 @@ p{
     padding: 0;
     margin: 0;
 }
+a{
+    color:#4078c0;
+}
+a:hover{
+    color:#20a0ff;
+}
 li{
     list-style: none;
 }
@@ -21,6 +27,8 @@ sup{
     background-color: #fff;
     border-bottom: 1px solid #E5E8EF;
     box-shadow: 0 1px 4px 0 rgba(99,114,130,0.15);
+    width: 100%;
+    z-index: 100;
 }
 #header .inner{
     max-width: 1020px;
@@ -182,6 +190,7 @@ span{
 }
 .link li{
     margin: 0 20px;
+    display: inline-block;
 }
 .link a{
     font-size: 14px;
@@ -197,13 +206,19 @@ span{
     color: #A9AAB4;
     margin-bottom: 30px;
 }
+
+
+.container{
+    min-height: 600px;
+    margin-top:50px;
+}
 .bs-sidebar{
     border-width:0;
     margin-bottom: 20px;
     background-color: #ecf0f1;
     box-shadow:none;
     top:80px;
-    bottom: 23px;
+    bottom: 5px;
     overflow: auto;
 }
 ul.nav{
@@ -219,9 +234,12 @@ ul.nav li{
     display: block;
     padding: 5px 20px;
     z-index: 1;
-    color: #18bc9c;
+    /*color: #1D8CE0;*/
+    /*color: #1f2f3d;*/
+    color:#5e6d82;
 }
 .bs-sidebar .nav > .active > a, .bs-sidebar .nav > .active:hover > a, .bs-sidebar .nav > .active:focus > a {
     /* border: none; */
     border-left: 2px solid;
+    color:#20a0ff;
 }

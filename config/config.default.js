@@ -18,16 +18,19 @@ module.exports = appInfo => {
   config.view = {
       defaultViewEngine: 'nunjucks',
       mapping: {
-          '.tpl': 'nunjucks',
+          '.tpl': 'nunjucks'
       },
   };
+  config.nunjucks = {
+          autoescape: false,
+  }
   config.news = {
       pageSize: 30,
       serverUrl: 'https://hacker-news.firebaseio.com/v0',
   };
 
   config.mongoose = {
-      url: 'mongodb://127.0.0.1/demo_stash',
+      url: 'mongodb://127.0.0.1/awesome_hub',
       options: {}
   };
 //

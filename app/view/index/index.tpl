@@ -219,6 +219,11 @@
         </div>
         <div class="col-lg-9 col-md-9">
             <h1 id="awesome-python">Awesome Python <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src=""></a></h1>
+            <div class="content">
+                {{ html }}
+
+                {{ readme }}
+            </div>
         </div>
     </div>
 
