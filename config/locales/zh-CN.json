@@ -1,0 +1,17 @@
+{
+  "header": {
+    "nav":{
+      "explore":"发现"
+    }
+  },
+
+  "foot":{
+    "about":"关于本站",
+    "issue":"留言反馈",
+    "friend_link":"友情链接"
+  },
+  "about":{
+    "title": "初衷",
+    "introduce":"致力于为开发者提供最好的开发工具集和最佳实践。"
+  }
+}

@@ -18,8 +18,8 @@
 <div class="container main-container">
     <div class="row">
         <div class="about-container">
-            <h1>初衷</h1>
-            <p>致力于为开发者提供最好的开发工具集和最佳实践。</p>
+            <h1>{{ __('about.title') }}</h1>
+            <p>{{ __('about.introduce') }}</p>
         </div>
     </div>
 
