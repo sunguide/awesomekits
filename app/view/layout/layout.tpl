@@ -17,7 +17,7 @@
         <div class="inner">
             <div class="logo">
                 <ul>
-                    <li>AwesomeKits <sup>Beta</sup></li>
+                    <li><a href="/">AwesomeKits <sup>Beta</sup></a></li>
                 </ul>
             </div>
             <div class="menu">
@@ -35,12 +35,12 @@
     <div id="footer">
         <div class="inner">
             <ul class="link">
-                <li><a href="https://tesreo.github.io/remotew/about.html" target="_blank">关于本站</a></li>
+                <li><a href="about" target="_blank">关于本站</a></li>
                 <li><a href="https://github.com/tesreo/remotew/issues" target="_blank">留言反馈</a></li>
                 <li><a href="https://tesreo.github.io/remotew/" target="_blank">更新计划</a></li>
             </ul>
             <div class="copyright">
-                <p>Copyright © 2017 Version 1.0</p>
+                <p>Copyright © 2017 Version 1.0.0</p>
             </div>
         </div>
     </div>

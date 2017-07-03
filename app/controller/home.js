@@ -11,15 +11,8 @@ module.exports = app => {
 
         yield this.ctx.render('home/index.tpl', data);
     }
-    * test(){
-        let readme = yield this.ctx.curl('https://raw.githubusercontent.com/sindresorhus/awesome/master/readme.md');
-
-        let markdown = require("markdown").markdown;
-        var striptags = require('striptags');
-
-        this.ctx.body = striptags(markdown.toHTML(readme.data.toString()));//markdown.toString( readme );
-console.log(helper);
-
+    * about(){
+        yield this.ctx.render('home/about.tpl');
     }
   }
   return HomeController;

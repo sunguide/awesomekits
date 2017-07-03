@@ -12,6 +12,7 @@ a{
 }
 a:hover{
     color:#20a0ff;
+    text-decoration: none;
 }
 li{
     list-style: none;
@@ -61,7 +62,6 @@ sup{
 #header a{
     color: #555567;
     text-decoration: none;
-    text-transform: uppercase;
     -webkit-transition-property: all;
     transition-property: all;
     -webkit-transition-duration: .3s;
@@ -209,7 +209,7 @@ span{
 
 
 .container{
-    min-height: 600px;
+    min-height: 400px;
     margin-top:50px;
 }
 .bs-sidebar{
@@ -242,4 +242,27 @@ ul.nav li{
     /* border: none; */
     border-left: 2px solid;
     color:#20a0ff;
+}
+
+.main-container{
+    margin-top: 80px;
+}
+
+.awesome-category-list .box{
+    text-align: center;
+    padding: 20px;
+    min-height: 250px;
+}
+
+.awesome-category-list .box img{
+    max-height: 50px;
+}
+.awesome-category-list .box p{
+    color:#707070;
+}
+
+/* about */
+.about-container{
+    margin: 80px;
+    text-align: center;
 }

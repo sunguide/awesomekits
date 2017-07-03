@@ -16,20 +16,11 @@
 </div>
 
 <div class="container main-container">
-    <div class="row awesome-category-list">
-        {% for category in categories %}
-        <div class="col-lg-3 col-md-3 col-sm-3">
-            <a href="{{ category.url }}">
-                <div class="box">
-                    <img src="{{ category.img }}" >
-                    <div class="caption">
-                        <h3>{{ category.title }}</h3>
-                        <p>{{ category.introduce }}</p>
-                    </div>
-                </div>
-            </a>
+    <div class="row">
+        <div class="about-container">
+            <h1>初衷</h1>
+            <p>致力于为开发者提供最好的开发工具集和最佳实践。</p>
         </div>
-        {% endfor %}
     </div>
 
 </div>
