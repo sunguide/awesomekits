@@ -6,7 +6,7 @@
 
 ## Contents
 
-- [Packages](#packages) {.html #example-1}
+- [Packages](#packages) 
 	- [Mad science](#mad-science)
 	- [Command-line apps](#command-line-apps)
 	- [Functional programming](#functional-programming)

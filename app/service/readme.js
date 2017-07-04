@@ -18,7 +18,7 @@ module.exports = app => {
         * getReadme(file) {
             const filePath = 'data/markdown/' + file;
             const rf = require("fs");
-            return rf.readFileSync(filePath,"utf-8");
+            return rf.readFileSync(filePath,"utf-8",);
         }
     }
 

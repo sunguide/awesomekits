@@ -18,22 +18,27 @@ module.exports = app => {
         // this.ctx.body = "fuck ";
         // render a template, path relate to `app/view`
         const markdown = new require("markdown").markdown;
+        let kit = this.ctx.params.kit;
         // let readmeResult = yield this.ctx.curl('https://raw.githubusercontent.com/sindresorhus/awesome-nodejs/master/readme.md');
 
         // let readme = readmeResult.data.toString();
-
-        let readme = yield this.ctx.service.readme.getReadme('nodejs_en.md');
-        // this.ctx.body = readme;
-
+        if(kit){
+            kit = kit + "_zh.md";
+        }
+        let readme = "";
+        try{
+            readme = yield this.ctx.service.readme.getReadme(kit);
+        }catch (e){
+            this.ctx.status = 404;
+            return;
+        }
         readme = markdown.toHTML(readme);
         let data = {
-            html:"<h3>ddddd</h3>",
             readme:readme
         };
-
+        this.ctx.set('content-type',"text/html");
         yield this.ctx.render('awesome/detail.tpl', data,{
             autoescape: false,
-
         });
     }
   }

@@ -11,9 +11,6 @@ module.exports = app => {
 
         yield this.ctx.render('home/index.tpl', data);
     }
-    * about(){
-        yield this.ctx.render('home/about.tpl');
-    }
   }
   return HomeController;
 };
