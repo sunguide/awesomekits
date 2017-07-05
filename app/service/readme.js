@@ -16,7 +16,12 @@ module.exports = app => {
          * @return {Promise} file info
          */
         * getReadme(file) {
-            const filePath = 'data/markdown/' + file;
+            const filePath = 'data/markdown/' + file + "_zh.md";
+            const rf = require("fs");
+            return rf.readFileSync(filePath,"utf-8",);
+        }
+        * getReadmeNav(file) {
+            const filePath = 'data/nav/' + file+ "_zh.json";
             const rf = require("fs");
             return rf.readFileSync(filePath,"utf-8",);
         }

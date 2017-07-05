@@ -22,11 +22,11 @@ module.exports = app => {
         // let readmeResult = yield this.ctx.curl('https://raw.githubusercontent.com/sindresorhus/awesome-nodejs/master/readme.md');
 
         // let readme = readmeResult.data.toString();
-        if(kit){
-            kit = kit + "_zh.md";
-        }
+
         let readme = "";
+        let nav = null;
         try{
+            nav = yield this.ctx.service.readme.getReadmeNav(kit);
             readme = yield this.ctx.service.readme.getReadme(kit);
         }catch (e){
             this.ctx.status = 404;
@@ -34,6 +34,12 @@ module.exports = app => {
         }
         readme = markdown.toHTML(readme);
         let data = {
+            foot:{
+                'ketchup': '5 地方',
+                'mustard': '1 t顶顶顶p',
+                'pickle': '0 t是的发生的p'
+            },
+            nav:JSON.parse(nav),
             readme:readme
         };
         this.ctx.set('content-type',"text/html");

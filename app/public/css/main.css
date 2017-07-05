@@ -245,7 +245,7 @@ ul.nav li{
 }
 
 .main-container{
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .awesome-category-list .box{
@@ -262,7 +262,7 @@ ul.nav li{
 .awesome-category-list .box p{
     color:#707070;
 }
-.awesome-category-list aside{
+.aside-left-nav{
     width: 200px;
     height: 100%;
     position: fixed;
@@ -271,19 +271,16 @@ ul.nav li{
     border-right: 1px solid #E6E6E6;
     overflow-y: scroll;
 }
-.awesome-category-list aside dl {
-    padding: 30px 0;
+.aside-left-nav {
+    padding-top: 30px;
 }
-.awesome-category-list aside dt{
+.aside-left-nav dt{
     padding-bottom: 10px;
     font-weight: bold;
     font-size: 16px;
     color: #333;
 }
-.awesome-category-list aside dd{
-    margin-bottom: 30px;
-}
-.awesome-category-list aside dd ul{
+.aside-left-nav dd ul{
     padding-left: 0;
 }
 .mobile-menu{

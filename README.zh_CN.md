@@ -1,6 +1,6 @@
-# demostash
-
-demo statsh
+# Awesome kits
+````````````
+A curated awesome kits list
 
 ## 快速入门
 

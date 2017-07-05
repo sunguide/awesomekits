@@ -10,7 +10,7 @@ module.exports = app => {
 	    remark:{type: String},
         status:{type: String},
         description: {type: String},
-    });
+    },{timestamps: true});
 
     return mongoose.model('Category', CategorySchema);
 }

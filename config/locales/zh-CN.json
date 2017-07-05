@@ -1,4 +1,5 @@
 {
+  "app_name":"AwesomeKits",
   "header": {
     "nav":{
       "explore":"发现"
@@ -7,7 +8,7 @@
 
   "foot":{
     "about":"关于本站",
-    "issue":"留言反馈",
+    "issues":"留言反馈",
     "friend_link":"友情链接"
   },
   "about":{

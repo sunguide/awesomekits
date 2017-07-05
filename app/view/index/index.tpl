@@ -18,7 +18,7 @@
 <div class="container main-container">
     <div class="row awesome-category-list">
         <div class="col-lg-3 col-md-3 col-sm-3">
-            <aside>
+            <aside class="aside-left-nav">
                 <div class="mobile-menu">
                     <ul>
                         <li><a href="/zh-cn/intro/" alt="指南">指南</a></li>
