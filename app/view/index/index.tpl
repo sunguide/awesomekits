@@ -33,7 +33,7 @@
                     <dt><a href="#">编程语言</a></dt>
                     <dd>
                         <ul>
-                        <li>汇集NodeJS、Java、PHP、Python等十余种流行编程。</li>
+                        <li>汇集NodeJS、Java、PHP、Python等十余种流行编程语言。</li>
                         </ul>
                     </dd>
                     <dt><a href="#">云计算</a></dt>

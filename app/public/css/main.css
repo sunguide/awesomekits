@@ -263,16 +263,16 @@ ul.nav li{
     color:#707070;
 }
 .aside-left-nav{
-    width: 200px;
+    width: 230px;
     height: 100%;
     position: fixed;
     top: 60px;
+    padding: 30px 0 0 30px;
     background: #fff;
     border-right: 1px solid #E6E6E6;
     overflow-y: scroll;
 }
 .aside-left-nav {
-    padding-top: 30px;
 }
 .aside-left-nav dt{
     padding-bottom: 10px;
@@ -282,6 +282,10 @@ ul.nav li{
 }
 .aside-left-nav dd ul{
     padding-left: 0;
+}
+
+.anchor-fix:target{
+    padding-top:80px;
 }
 .mobile-menu{
     display: none;

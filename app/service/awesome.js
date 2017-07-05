@@ -30,13 +30,13 @@ module.exports = app => {
                 },
                 {
                     title:"Python",
-                    url:"/awesome-nodejs",
+                    url:"/awesome-python",
                     img:"https://dn-mhke0kuv.qbox.me/b51a1dacf9bb7883defe.png?imageView2/2/w/200/h/64/q/85/interlace/1",
                     introduce:"Python 是一种面向对象、直译式电脑编程语言，也是一种功能强大的通用型语言。"
                 },
                 {
                     title:"Java",
-                    url:"/awesome-nodejs",
+                    url:"/awesome-java",
                     img:"https://dn-mhke0kuv.qbox.me/f8ee3cd45f949a546263.png?imageView2/2/w/200/h/64/q/85/interlace/1",
                     introduce:"Java 是一种可以撰写跨平台应用软件的面向对象的程序设计语言。"
                 },

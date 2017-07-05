@@ -11,6 +11,7 @@ module.exports = app => {
   app.get('/home', 'home.index');
   app.get('/awesome-:kit', 'index.awesome');
   app.get('/about', 'public.about');
+  app.get('/update', 'public.update');
   app.get('/link', 'public.link');
 
   //api
