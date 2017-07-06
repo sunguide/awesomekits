@@ -283,7 +283,9 @@ ul.nav li{
 .aside-left-nav dd ul{
     padding-left: 0;
 }
-
+.aside-left-nav a{
+    text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+}
 .anchor-fix:target{
     padding-top:80px;
 }

@@ -34,7 +34,7 @@
             </aside>
         </div>
         <div class="col-lg-9 col-md-9">
-            <div class="content">
+            <div class="content-container">
                 {{ readme }}
             </div>
         </div>
