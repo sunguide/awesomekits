@@ -1,21 +1,22 @@
 # Awesome Go 
-精选 Go 的框架、类库、项目等
+> 精选 Go 的框架、类库、项目等
+
 ### Contents
 
 - [Awesome Go](#awesome-go)
-    - [Audio & Music](#audiomusic)
-    - [Authentication & OAuth](#authentication--oauth)
-    - [Command Line](#command-line)
+    - [Audio & Music](#audiomusic) 声音和音乐
+    - [Authentication & OAuth](#authentication--oauth) 认证授权
+    - [Command Line](#command-line)命令行
     - [Configuration](#configuration)
-    - [Continuous Integration](#continuous-integration)
-    - [CSS Preprocessors](#css-preprocessors)
-    - [Data Structures](#data-structures)
-    - [Database](#database)
-    - [Database Drivers](#database-drivers)
-    - [Date & Time](#date--time)
-    - [Distributed Systems](#distributed-systems)
-    - [Email](#email)
-    - [Embeddable Scripting Languages](#embeddable-scripting-languages)
+    - [Continuous Integration](#continuous-integration)持续集成
+    - [CSS Preprocessors](#css-preprocessors)  CSS预处理
+    - [Data Structures](#data-structures) 数据结构
+    - [Database](#database) 数据库
+    - [Database Drivers](#database-drivers) 数据库驱动
+    - [Date & Time](#date--time) 日期和时间
+    - [Distributed Systems](#distributed-systems) 分布式系统
+    - [Email](#email) 邮件
+    - [Embeddable Scripting Languages](#embeddable-scripting-languages) 嵌入式脚本语言
     - [Files](#files)
     - [Financial](#financial)
     - [Forms](#forms)

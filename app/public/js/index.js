@@ -1,17 +1,17 @@
 //main js
-window.onload = function(){
-    autoSiderNav();
-};
 $(function () {
-
+    autoSiderNav();
 });
 
 function autoSiderNav() {
+    if($.trim($(".aside-left-nav").html()).length != 0){
+        return true;
+    }
     var currentParentId = '';
     var nodes = {};
     var child = {};
     var count = $(".content-container").find("h2,h3").length;
-    $(".content-container").find("h2,h3").each(function(i,item){
+    $(".content-container").find("h2,h3").each(function(i,t){
         var tag = $(this).get(0).tagName.toLowerCase();
         //获取id
         let title = $(this).html();
@@ -22,15 +22,15 @@ function autoSiderNav() {
         }else{
             id = title.toLowerCase().replace(/( )/g,'-').replace(/\//g,'');
         }
-        console.log(id);
         if(!id){
             return true;
         }else if(id.length > 15){
             title = title.replace(/(（[\w\W]*）)/g,'');
-            //add anchor
-            $(this).attr('id',id);
-            $(this).addClass("anchor-fix")
         }
+        //add anchor
+        $(this).attr('id',id);
+        $(this).addClass("anchor-fix");
+
         if(tag == 'h2'){
             if(currentParentId){
                 nodes[currentParentId]['child'] = child;
@@ -48,7 +48,6 @@ function autoSiderNav() {
         }
         $(this).attr("id",id);
     });
-    console.log(nodes);
     if(nodes){
         var html = '';
         for(name in nodes){

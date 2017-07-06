@@ -11,8 +11,13 @@ module.exports = app => {
         let data = {
             categories:categories
         };
-        console.log(data);
         yield this.ctx.render('index/index.tpl', data);
+    }
+    * editors(){
+        let data = {
+            categories:categories
+        };
+        yield this.ctx.render('index/editor.tpl', data);
     }
     * awesome(){
         // this.ctx.body = "fuck ";

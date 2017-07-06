@@ -30,23 +30,34 @@
                     </ul>
                 </div>
                 <dl>
-                    <dt><a href="#">编程语言</a></dt>
+                    <dt><a href="/languages">编程语言</a></dt>
                     <dd>
-                        <ul>
-                        <li>汇集NodeJS、Java、PHP、Python等十余种流行编程语言。</li>
-                        </ul>
+                        <ul><li>汇集NodeJS、Java、PHP、Python等十余种流行编程语言。</li></ul>
                     </dd>
                     <dt><a href="#">云计算</a></dt>
-                    <dt><a href="#">前端开发</a></dt>
-                    <dt><a href="#">后台开发</a></dt>
-                    <dt><a href="#">计算机科学</a></dt>
-                    <dt><a href="#">大数据</a></dt>
-                    <dt><a href="#">开发环境</a></dt>
-                    <dt><a href="#">硬件</a></dt>
-                    <dt><a href="#">CMS</a></dt>
-                    <dt><a href="#">安全</a></dt>
-                    <dt><a href="#">数据库</a></dt>
-                    <dt><a href="#">大杂烩</a></dt>
+                    <dt>前端开发</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="/awesome-react/">React</a></li>
+                            <li><a href="/awesome-vue/">Vue</a></li>
+                            <li><a href="/awesome-html5/">Html5</a></li>
+                        </ul>
+                    </dd>
+                    <dt>后端开发</dt>
+                    <dd>
+                        <ul><li><a href="/awesome-laravel">Laravel（PHP）</a> </li></ul>
+                    </dd>
+                    <dt>计算机科学</dt>
+                    <dt><a href="/awesome-bigdata">大数据</a></dt>
+                    <dt><a href="/awesome-devenv">部署开发环境</a></dt>
+                    <dd>
+                        <ul><li>工欲善其事必先利其器</li></ul>
+                    </dd>
+                    <dt>硬件</dt>
+                    <dt>CMS</dt>
+                    <dt>安全</dt>
+                    <dt>数据库</dt>
+                    <dt>大杂烩</dt>
                     <!--<dd>-->
                         <!--<ul>-->
                             <!--<li><a href="/zh-cn/intro/index.html">Egg.js 是什么?</a></li>-->

@@ -5,9 +5,6 @@ module.exports = appInfo => {
 
     config.keys = appInfo.name + '_1496902118915_8798';
 
-    //middlewares
-    config.middleware = [ 'errorHandler' ];
-
     /**
      * some description
      * @member Config#test
@@ -42,9 +39,9 @@ module.exports = appInfo => {
     };
 
     //pages
-    config.notfound = {
-        pageUrl: '/404.html',
-    };
+    // config.notfound = {
+        // pageUrl: '/404.html',
+    // };
 
     return config;
 };

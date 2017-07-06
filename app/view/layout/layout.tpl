@@ -35,9 +35,9 @@
     <div id="footer">
         <div class="inner">
             <ul class="link">
-                <li><a href="about">{{ __('foot.about') }}</a></li>
-                <li><a href="https://github.com/tesreo/remotew/issues">{{ __('foot.issues') }}</a></li>
-                <li><a href="https://tesreo.github.io/remotew/">更新计划</a></li>
+                <li><a href="/about">{{ __('foot.about') }}</a></li>
+                <li><a target="_blank" href="https://wj.qq.com/s/1453579/4d86">{{ __('foot.issues') }}</a></li>
+                <li><a href="/update">更新计划</a></li>
             </ul>
             <div class="copyright">
                 <p>Copyright © 2017 {{ __('app_name') }}</p>
@@ -49,6 +49,6 @@
 <!--javascript-->
 <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="public/js/index.js"></script>
+<script src="/public/js/index.js"></script>
 </body>
 </html>

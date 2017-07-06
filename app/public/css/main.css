@@ -264,15 +264,14 @@ ul.nav li{
 }
 .aside-left-nav{
     width: 230px;
-    height: 100%;
     position: fixed;
     top: 60px;
+    bottom: 20px;
     padding: 30px 0 0 30px;
     background: #fff;
     border-right: 1px solid #E6E6E6;
     overflow-y: scroll;
-}
-.aside-left-nav {
+    overflow-x:hidden;
 }
 .aside-left-nav dt{
     padding-bottom: 10px;

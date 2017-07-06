@@ -1,5 +1,9 @@
 module.exports = () => {
     return function * errorHandler(next) {
+        console.log(this.app.config.env);
+        if(this.app.config.env === 'local'){
+            return true;
+        }
         try {
             yield next;
         } catch (err) {

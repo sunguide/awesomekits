@@ -6,6 +6,7 @@ module.exports = app => {
   app.get('/front-end-development', 'index.index');
   app.get('/back-end-development', 'index.index');
   app.get('/big-data', 'index.index');
+  app.get('/editors', 'index.editors');
 
 
   app.get('/home', 'home.index');
