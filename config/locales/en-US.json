@@ -1,18 +1,21 @@
 {
   "app_name":"AwesomeKits",
+  "language":"EN",
+  "slogan":"Life is too short to make a wheel",
   "header": {
     "nav":{
-      "explore":"发现"
+      "explore":"explore"
     }
   },
 
   "foot":{
-    "about":"关于本站",
-    "issues":"留言反馈",
-    "friend_link":"友情链接"
+    "about":"About",
+    "issues":"Issues",
+    "friend_link":"Friends",
+    "update":"Update"
   },
   "about":{
-    "title": "初衷",
-    "introduce":"致力于为开发者提供最好的开发工具集和最佳实践。"
+    "title": "Mission",
+    "introduce":"A curated awesome kits for Developer"
   }
 }

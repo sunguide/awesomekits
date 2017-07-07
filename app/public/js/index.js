@@ -1,6 +1,14 @@
 //main js
 $(function () {
     autoSiderNav();
+    $(".change-language").click(function () {
+        if($(this).html() == "EN"){
+            document.cookie="locale=zh-CN";
+        }else{
+            document.cookie="locale=en-US";
+        }
+        window.location.reload();
+    })
 });
 
 function autoSiderNav() {
@@ -43,7 +51,7 @@ function autoSiderNav() {
         }else if(tag == 'h3'){
             child[id] = title;
         }
-        if(count-1 == i){
+        if(count-1 == i && nodes[currentParentId]){
             nodes[currentParentId]['child'] = child;
         }
         $(this).attr("id",id);

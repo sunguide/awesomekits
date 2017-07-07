@@ -1,5 +1,7 @@
 {
   "app_name":"AwesomeKits",
+  "language":"中文",
+  "slogan":"人生苦短，不要重复造轮子!",
   "header": {
     "nav":{
       "explore":"发现"
@@ -9,7 +11,8 @@
   "foot":{
     "about":"关于本站",
     "issues":"留言反馈",
-    "friend_link":"友情链接"
+    "friend_link":"友情链接",
+    "update":"更新日志"
   },
   "about":{
     "title": "初衷",

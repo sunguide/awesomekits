@@ -9,22 +9,19 @@
     <link rel="stylesheet" href="/public/css/main.css" />
 
     <link rel="icon" href="/public/favicon.png" type="image/x-icon">
-    <title>{% block title %}DemoStash{% endblock %}</title>
+    <title>{% block title %}Awesome Kits | A curated awesome kit list {% endblock %}</title>
 </head>
 <body>
 <div id="wrapper">
     <div id="header" class="affix">
         <div class="inner">
             <div class="logo">
-                <ul>
-                    <li><a href="/">AwesomeKits <sup>Beta</sup></a></li>
-                </ul>
+                <a href="/" alt="Awesome Kits"><img src="/public/logo.png"></a>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="https://remotew.com">网址导航</a></li>
-                    <li><a href="https://remotex.ooclab.org" target="_blank">工作机会</a></li>
-                    <li><a href="https://jinshuju.net/f/Zasbh3" target="_blank">提交网址</a></li>
+                    <li><span>{{ __('slogan') }}</span></li>
+                    <li><button class="btn btn-default btn-xs change-language">{{ __('language') }}</button></li>
                 </ul>
             </div>
 
@@ -37,10 +34,10 @@
             <ul class="link">
                 <li><a href="/about">{{ __('foot.about') }}</a></li>
                 <li><a target="_blank" href="https://wj.qq.com/s/1453579/4d86">{{ __('foot.issues') }}</a></li>
-                <li><a href="/update">更新计划</a></li>
+                <li><a href="/update">{{ __('foot.update') }}</a></li>
             </ul>
             <div class="copyright">
-                <p>Copyright © 2017 {{ __('app_name') }}</p>
+                <p>Copyright © 2017 {{ __('app_name') }} v1.0.0</p>
             </div>
         </div>
     </div>

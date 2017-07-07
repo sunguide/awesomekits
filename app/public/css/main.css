@@ -30,6 +30,7 @@ sup{
     box-shadow: 0 1px 4px 0 rgba(99,114,130,0.15);
     width: 100%;
     z-index: 100;
+    top: 0;
 }
 #header .inner{
     max-width: 1020px;
@@ -53,6 +54,9 @@ sup{
     font-weight: 400;
     font-family: 'Ubuntu', sans-serif;
 }
+#header .logo img{
+    height: 60px;
+}
 
 #header .menu{
     float: left!important;
@@ -70,9 +74,9 @@ sup{
     padding-bottom: 2px;
 }
 #header a:hover{
-    color: #FF7D46;
-    border-bottom: 2px solid #FF7D46;
-    padding-bottom: 4px;
+    color: #20a0ff;
+    border-bottom: 2px solid #20a0ff;
+    padding-bottom: 22px;
 }
 .menu a{
     margin: 0 20px;
@@ -126,7 +130,7 @@ sup{
 }
 
 span{
-    color: #FF7D46;
+    color: #333;
 }
 
 .box_title{
@@ -275,7 +279,7 @@ ul.nav li{
 }
 .aside-left-nav dt{
     padding-bottom: 10px;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 16px;
     color: #333;
 }
@@ -295,4 +299,7 @@ ul.nav li{
 .about-container{
     margin: 80px;
     text-align: center;
+}
+.about-container p{
+    margin-top: 80px;
 }

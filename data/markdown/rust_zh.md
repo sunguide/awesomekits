@@ -1,8 +1,6 @@
-# Awesome Rust [<img src="https://api.travis-ci.org/rust-unofficial/awesome-rust.svg?branch=master">](https://travis-ci.org/rust-unofficial/awesome-rust)
+# Awesome Rust 
 
 A curated list of Rust code and resources, inspired by other awesome lists.
-
-If you want to contribute, please read [this](CONTRIBUTING.md).
 
 ## Table of Contents
 
