@@ -1,7 +1,7 @@
 {
-  "name": "demostash",
+  "name": "awesomekits",
   "version": "1.0.0",
-  "description": "demo statsh",
+  "description": "a curated awesome kits list",
   "dependencies": {
     "egg": "^1.4.0",
     "markdown-it": "^8.3.1"
@@ -42,7 +42,7 @@
   },
   "keywords": [
     "demo",
-    "demostash"
+    "awesomekits"
   ],
   "author": "sunguide",
   "license": "MIT"

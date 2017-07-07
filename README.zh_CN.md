@@ -13,7 +13,7 @@ $ npm test
 
 ```js
 // {app_root}/index.js
-require('demostash').startCluster({
+require('awesomekits').startCluster({
   baseDir: __dirname,
   // port: 7001, // default to 7001
 });

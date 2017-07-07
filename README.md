@@ -1,6 +1,6 @@
-# demostash
+# Awesome Kits
 
-demo statsh
+Awesome Kits
 
 ## QuickStart
 
@@ -13,7 +13,7 @@ publish your framework to npm, then change app's dependencies:
 
 ```js
 // {app_root}/index.js
-require('demostash').startCluster({
+require('awesomekits').startCluster({
   baseDir: __dirname,
   // port: 7001, // default to 7001
 });
