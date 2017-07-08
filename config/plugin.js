@@ -8,6 +8,6 @@ exports.nunjucks = {
 };
 
 exports.mongoose = {
-    enable: true,
+    enable: false,
     package: 'egg-mongoose',
 };
