@@ -4,9 +4,7 @@
         "node": true
     },
     "extends": "eslint:recommended",
-    "parserOptions": {
-        "sourceType": "module"
-    },
+    "parserOptions": {},
     "rules": {
         "indent": [
             "error",

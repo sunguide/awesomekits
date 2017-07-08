@@ -6,3 +6,6 @@ build/*
 
 # Ignore Public js
 app/public/*
+
+# Ignore test/*
+test/*
