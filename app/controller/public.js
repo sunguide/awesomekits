@@ -19,12 +19,12 @@ module.exports = app => {
             yield this.ctx.render('public/link.tpl');
         }
         * update(){
-            const filePath = "data/markdown/update.md";
-            const rf = require("fs");
-            const readme = rf.readFileSync(filePath,"utf-8",);
+            const filePath = 'data/markdown/update.md';
+            const rf = require('fs');
+            const readme = rf.readFileSync(filePath,'utf-8');
             let data = {
                 update:this.ctx.helper.markdownToHTML(readme)
-            }
+            };
             yield this.ctx.render('public/update.tpl',data);
         }
     }

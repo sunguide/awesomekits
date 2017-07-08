@@ -6,7 +6,7 @@ module.exports = app => {
         uid:{type: Number},
         name: {type: String},
         home_url: {type: String},   //项目地址
-	    demo_url:{type: String},
+        demo_url:{type: String},
         author:{type: String},
         description:{type: String},
         tags:{type: Array},
@@ -16,4 +16,4 @@ module.exports = app => {
     },{timestamps: true});
 
     return mongoose.model('Kit', KitSchema);
-}
+};

@@ -40,7 +40,7 @@ module.exports = appInfo => {
 
     //pages
     // config.notfound = {
-        // pageUrl: '/404.html',
+    // pageUrl: '/404.html',
     // };
 
     return config;

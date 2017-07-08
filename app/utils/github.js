@@ -9,7 +9,7 @@ module.exports = {
 
     // 获取Readme.md
     * getReadme(url) {
-        return yield this.curl('https://registry.npm.taobao.org/egg/latest', {});
+        return yield this.curl(url, {});
     }
 
 };

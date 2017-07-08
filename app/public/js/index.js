@@ -1,25 +1,25 @@
 //main js
 $(function () {
     autoSiderNav();
-    $(".change-language").click(function () {
-        if($(this).html() == "EN"){
-            document.cookie="locale=zh-CN";
+    $('.change-language').click(function () {
+        if($(this).html() == 'EN'){
+            document.cookie='locale=zh-CN';
         }else{
-            document.cookie="locale=en-US";
+            document.cookie='locale=en-US';
         }
         window.location.reload();
-    })
+    });
 });
 
 function autoSiderNav() {
-    if($.trim($(".aside-left-nav").html()).length != 0){
+    if($.trim($('.aside-left-nav').html()).length != 0){
         return true;
     }
     var currentParentId = '';
     var nodes = {};
     var child = {};
-    var count = $(".content-container").find("h2,h3").length;
-    $(".content-container").find("h2,h3").each(function(i,t){
+    var count = $('.content-container').find('h2,h3').length;
+    $('.content-container').find('h2,h3').each(function(i,t){
         var tag = $(this).get(0).tagName.toLowerCase();
         //获取id
         let title = $(this).html();
@@ -37,7 +37,7 @@ function autoSiderNav() {
         }
         //add anchor
         $(this).attr('id',id);
-        $(this).addClass("anchor-fix");
+        $(this).addClass('anchor-fix');
 
         if(tag == 'h2'){
             if(currentParentId){
@@ -54,7 +54,7 @@ function autoSiderNav() {
         if(count-1 == i && nodes[currentParentId]){
             nodes[currentParentId]['child'] = child;
         }
-        $(this).attr("id",id);
+        $(this).attr('id',id);
     });
     if(nodes){
         var html = '';
@@ -68,8 +68,8 @@ function autoSiderNav() {
                 }
                 html +='</ul>';
             }
-            html += '</dd>'
+            html += '</dd>';
         }
-        $(".aside-left-nav").html(html);
+        $('.aside-left-nav').html(html);
     }
 }

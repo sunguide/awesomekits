@@ -5,7 +5,7 @@ module.exports = app => {
         id: {type: String},
         name: {type: String},
         git_url: {type: String},
-	    demo_url:{type: String},
+        demo_url:{type: String},
         author:{type: String},
         description:{type: String},
         tags:{type: Array},
@@ -15,4 +15,4 @@ module.exports = app => {
     });
 
     return mongoose.model('Repos', ReposSchema);
-}
+};
