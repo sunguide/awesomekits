@@ -12,6 +12,7 @@
       "language":"Languages",
       "language_intro":"Collect NodeJS、Java、PHP、Python etc.",
       "cloud_computing":"Cloud Computing",
+      "docker":"Docker",
       "frontend_development":"Front-End Development",
       "react":"React",
       "vue":"Vue",

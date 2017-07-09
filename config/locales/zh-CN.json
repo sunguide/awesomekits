@@ -13,6 +13,7 @@
       "language":"编程语言",
       "language_intro":"汇集NodeJS、Java、PHP、Python等十余种流行编程语言。",
       "cloud_computing":"云计算",
+      "docker":"Docker",
       "frontend_development":"前端开发",
       "react":"React",
       "vue":"Vue",

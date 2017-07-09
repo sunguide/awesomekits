@@ -13,8 +13,10 @@ module.exports = appInfo => {
     config.test = {
         key: appInfo.name + '_123456',
     };
-
     // add your config here
+    config.siteFile = {
+        '/favicon.ico': '/public/favicon.ico',
+    };
     config.view = {
         defaultViewEngine: 'nunjucks',
         mapping: {

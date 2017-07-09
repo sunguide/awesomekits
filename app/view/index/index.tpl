@@ -17,6 +17,11 @@
                         <ul><li>{{ __('aside.nav.language_intro') }}</li></ul>
                     </dd>
                     <dt><a href="#">{{ __('aside.nav.cloud_computing') }}</a></dt>
+                    <dd>
+                        <ul>
+                            <li><a href="/awesome-docker/">{{ __('aside.nav.docker') }}</a></li>
+                        </ul>
+                    </dd>
                     <dt>{{ __('aside.nav.frontend_development') }}</dt>
                     <dd>
                         <ul>
