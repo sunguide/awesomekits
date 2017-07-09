@@ -7,7 +7,28 @@
       "explore":"explore"
     }
   },
-
+  "aside":{
+    "nav":{
+      "language":"Languages",
+      "language_intro":"Collect NodeJS、Java、PHP、Python etc.",
+      "cloud_computing":"Cloud Computing",
+      "frontend_development":"Front-End Development",
+      "react":"React",
+      "vue":"Vue",
+      "html5":"Html5",
+      "backend_development":"Back-End Development",
+      "laravel":"Laravel（PHP）",
+      "computer_science":"Computer Science",
+      "bigdata":"Big Data",
+      "devenv":"Development Environment",
+      "devenv_intro":"Sharpen your tool before achieve your work. ",
+      "hardware":"Hardware",
+      "cms":"CMS",
+      "security":"Security",
+      "database":"Database",
+      "miscellaneous":"Miscellaneous"
+    }
+  },
   "foot":{
     "about":"About",
     "issues":"Issues",

@@ -8,6 +8,28 @@
     }
   },
 
+  "aside":{
+    "nav":{
+      "language":"编程语言",
+      "language_intro":"汇集NodeJS、Java、PHP、Python等十余种流行编程语言。",
+      "cloud_computing":"云计算",
+      "frontend_development":"前端开发",
+      "react":"React",
+      "vue":"Vue",
+      "html5":"Html5",
+      "backend_development":"后端开发",
+      "laravel":"Laravel（PHP）",
+      "computer_science":"计算机科学",
+      "bigdata":"大数据",
+      "devenv":"部署开发环境",
+      "devenv_intro":"工欲善其事必先利其器",
+      "hardware":"硬件",
+      "cms":"CMS",
+      "security":"安全",
+      "database":"数据库",
+      "miscellaneous":"大杂烩"
+    }
+  },
   "foot":{
     "about":"关于本站",
     "issues":"留言反馈",
