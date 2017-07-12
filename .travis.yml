@@ -7,9 +7,12 @@ install:
 addons:
   ssh_known_hosts: www.awesomekits.com
 script:
-- npm run ci && rsync -az -vv --delete -e "ssh -i ~/.ssh/id_rsa" ./ root@www.awesomekits.com:/home/wwwroot/awesomekits.com
+- npm run ci
+#- rsync -az -vv --delete -e "ssh -i ~/.ssh/id_rsa" ./ root@www.awesomekits.com:/home/wwwroot/awesomekits.com
 after_script:
 - npminstall codecov && codecov
 before_install:
 - openssl aes-256-cbc -K $encrypted_336e653e42ec_key -iv $encrypted_336e653e42ec_iv -in travis.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
+after_success:
+- ssh -i ~/.ssh/id_rsa root@www.awesomekits.com 'cd /home/wwwroot/awesomekits && git pull'

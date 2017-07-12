@@ -11,9 +11,9 @@ $(function () {
     });
     $('.content-container').find('h1,h2,h3,h4').each(function(i,t){
         //获取id
-        let title = $(this).html();
-        let result = title.match(/（([\w\W]*)）/);
-        let id = null;
+        var title = $(this).html();
+        var result = title.match(/（([\w\W]*)）/);
+        var id = null;
         if(result){
             id = result[1].toLowerCase().replace(/( )/g,'-').replace(/[\/\?\(\)]/g,'');
         }else{
@@ -30,8 +30,8 @@ $(function () {
 
 function autoSiderNav() {
     function getIndexId(title) {
-        let result = title.match(/（([\w\W]*)）/);
-        let id = null;
+        var result = title.match(/（([\w\W]*)）/);
+        var id = null;
         if(result){
             id = result[1].toLowerCase().replace(/( )/g,'-').replace(/[\/\?\(\)]/g,'');
         }else{
@@ -44,21 +44,24 @@ function autoSiderNav() {
     }
     //1.通过Contents列表建立目录
     var catalogs = $('.content-container h1 + ul:first');
-    if(catalogs.length > 0){
+    if(catalogs.length == 0){
+        catalogs = $('.content-container h2 + ul:first');
+    }
+    if(catalogs.length > 0 && catalogs.prev().html().toLowerCase().indexOf('content') > -1){
         var currentParentId = '';
         var nodes = {};
         var child = {};
         catalogs.find('li').each(function () {
-            let title = $(this).find('a').html();
-            let id = getIndexId(title);
+            var title = $(this).find('a').html();
+            var id = getIndexId(title);
             currentParentId = id;
             nodes[currentParentId] = {
                 'name':title
             };
             if($(this).find('li')){
                 $(this).find('li').each(function () {
-                    let title = $(this).find('a').html();
-                    let id = getIndexId(title);
+                    var title = $(this).find('a').html();
+                    var id = getIndexId(title);
                     if(id){
                         child[id] = title;
                     }
@@ -77,8 +80,8 @@ function autoSiderNav() {
         $('.content-container').find('h2,h3').each(function(i,t){
             var tag = $(this).get(0).tagName.toLowerCase();
             //获取id
-            let title = $(this).html();
-            let id = getIndexId(title);
+            var title = $(this).html();
+            var id = getIndexId(title);
             if(!id){
                 return true;
             }else if(id.length > 15){

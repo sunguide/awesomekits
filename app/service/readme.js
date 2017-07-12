@@ -9,6 +9,7 @@ module.exports = app => {
     class readme extends app.Service {
         constructor(ctx) {
             super(ctx);
+            this.ctx = ctx;
         }
         /**
          * get readme file
@@ -16,13 +17,14 @@ module.exports = app => {
          * @return {Promise} file info
          */
         getReadme(file) {
-            const filePath = 'data/markdown/' + file + '_zh.md';
+            let locale = this.ctx.locale;
+            let filePath = '';
+            if(locale && locale.indexOf('en') > -1) {
+                filePath = 'data/markdown/' + file + '_en.md';
+            }else{
+                filePath = 'data/markdown/' + file + '_zh.md';
+            }
             const  rf = require('fs');
-            return rf.readFileSync(filePath,'utf-8');
-        }
-        getReadmeNav(file) {
-            const filePath = 'data/nav/' + file+ '_zh.json';
-            const rf = require('fs');
             return rf.readFileSync(filePath,'utf-8');
         }
     }
