@@ -13,4 +13,3 @@ after_script:
 - npminstall codecov && codecov
 before_install:
 - openssl aes-256-cbc -K $encrypted_336e653e42ec_key -iv $encrypted_336e653e42ec_iv -in travis.enc -out ~/travis -d
-- chmod 600 ~/.ssh/id_rsa
