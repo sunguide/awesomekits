@@ -7,7 +7,7 @@ install:
 addons:
   ssh_known_hosts: awesomekits.com
 script:
-- npm run ci && rsync -az -vv --delete -e 'ssh' / sunguide@awesomekits.com:/home/wwwroot/awesomekits.com
+- npm run ci && rsync -az -vv --delete -e 'ssh' / root@awesomekits.com:/home/wwwroot/awesomekits.com
 after_script:
 
 - npminstall codecov && codecov
