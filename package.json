@@ -1,7 +1,7 @@
 {
   "name": "awesomekits",
   "version": "1.0.0",
-  "description": "a curated awesome kits list",
+  "description": "A curated list of awesome kits",
   "dependencies": {
     "egg": "^1.4.0",
     "markdown": "^0.5.0",
@@ -34,7 +34,7 @@
     "pkgfiles": "egg-bin pkgfiles"
   },
   "ci": {
-    "version": "6, 8"
+    "version": "8"
   },
   "repository": {
     "type": "git",

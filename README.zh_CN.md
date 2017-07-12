@@ -1,28 +1,17 @@
 # Awesome kits
 ````````````
-A curated awesome kits list
+致力于为开发者提供最好的开发工具集和最佳实践。
 
 ## 快速入门
 
 ```bash
 $ npm install
-$ npm test
-```
-
-在应用中声明使用框架：
-
-```js
-// {app_root}/index.js
-require('awesomekits').startCluster({
-  baseDir: __dirname,
-  // port: 7001, // default to 7001
-});
-
+$ npm start
 ```
 
 ## 提问交流
 
-请到 [egg issues](https://github.com/eggjs/egg/issues) 异步交流。
+请到 [awesomekits issues](https://github.com/eggjs/egg/issues) 异步交流。
 
 ## License
 

@@ -1,12 +1,11 @@
 # Awesome Kits
 
-Awesome Kits
+A curated list of awesome kits .
 
 ## QuickStart
 
 ```bash
 $ npm install
-$ npm test
 $ npm start
 ```
 
