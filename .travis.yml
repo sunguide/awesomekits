@@ -5,9 +5,9 @@ node_js:
 install:
 - npm i npminstall && npminstall
 addons:
-  ssh_known_hosts: awesomekits.com
+  ssh_known_hosts: www.awesomekits.com
 script:
-- npm run ci && rsync -az -vv --delete  / root@awesomekits.com:/home/wwwroot/awesomekits.com
+- npm run ci && rsync -az -vv --delete  public/ root@www.awesomekits.com:/home/wwwroot/awesomekits.com
 after_script:
 
 - npminstall codecov && codecov
