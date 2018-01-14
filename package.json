@@ -1,6 +1,6 @@
 {
   "name": "awesomekits",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A curated list of awesome kits",
   "dependencies": {
     "egg": "^2.2.0",
