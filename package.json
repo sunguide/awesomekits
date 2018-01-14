@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "A curated list of awesome kits",
   "dependencies": {
-    "egg": "^1.4.0",
-    "markdown": "^0.5.0",
-    "egg-mongoose": "^2.1.0"
+    "egg": "^2.2.0",
+    "egg-bin": "^4.3.5",
+    "egg-mongoose": "^2.1.0",
+    "egg-scripts": "^2.5.0",
+    "egg-view-nunjucks": "^2.1.2",
+    "markdown": "^0.5.0"
   },
   "devDependencies": {
     "autod": "^2.8.0",
@@ -13,7 +16,6 @@
     "egg-bin": "^3.4.0",
     "egg-ci": "^1.7.0",
     "egg-mock": "^3.7.0",
-    "egg-view-nunjucks": "^2.1.2",
     "eslint": "^4.0.0",
     "eslint-config-egg": "^4.2.0",
     "supertest": "^3.0.0",
@@ -23,7 +25,8 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "egg-scripts start --daemon --env=prod --port=7001",
+    "stop": "egg-scripts stop",
     "dev": "egg-bin dev && open http://localhost:7001/",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
